@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, withRouter } from 'react-router-dom';
+import { BrowserRouter, BrowserRouterProps, withRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const TheApp = withRouter(App);
+
+const routerProps: BrowserRouterProps = { };
+
+// Example of production environment variables
+if (process.env.NODE_ENV === 'production'){
+    routerProps.basename = process.env.PUBLIC_URL;
+}
 
 ReactDOM.render(
   <React.StrictMode>
