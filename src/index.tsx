@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, BrowserRouterProps, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, BrowserRouterProps } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-const TheApp = withRouter(App);
 
 const routerProps: BrowserRouterProps = { };
 
@@ -16,9 +14,9 @@ if (process.env.NODE_ENV === 'production'){
 
 ReactDOM.render(
   <React.StrictMode>
-      <BrowserRouter>
-        <TheApp />
-      </BrowserRouter>    
+      <Router {...routerProps}>
+        <App />
+      </Router>    
   </React.StrictMode>,
   document.getElementById('root')
 );

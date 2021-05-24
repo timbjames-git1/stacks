@@ -51,6 +51,9 @@ const App: React.FC = () => {
                         <a href="#" className="instagram"><i className="icofont-instagram"></i></a>
                         <a href="#" className="google-plus"><i className="icofont-skype"></i></a>
                         <a href="#" className="linkedin"><i className="icofont-linkedin"></i></a>
+                        <p>
+                            Copyright ©<script>document.write(new Date().getFullYear());</script>2021 All rights reserved ({process.env.NODE_ENV} - {process.env.PUBLIC_URL})     
+                        </p>
                     </div>
 
                 </div>
