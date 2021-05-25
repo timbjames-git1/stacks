@@ -53,7 +53,7 @@ const App: React.FC = () => {
                         <a href="https://www.linkedin.com/in/tim-james-9a7a1610/" className="linkedin" target="_blank"><i className="icofont-linkedin"></i></a>
                     </div>
                     
-                    <p className="copyright d-flex mt-4">
+                    <p className="copyright mt-4">
                         Copyright ©<script>document.write(new Date().getFullYear());</script>2021 All rights reserved <i>({process.env.NODE_ENV} - {process.env.PUBLIC_URL})</i>
                     </p>
 
