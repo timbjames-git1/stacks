@@ -9,7 +9,7 @@ const AboutView: React.FC = () => {
         setTimeout(() => {
             setClassName('about section-show');
         }, 50);        
-    }, [null]);
+    }, []);
 
     return (
         <section id="about" className={className}>
